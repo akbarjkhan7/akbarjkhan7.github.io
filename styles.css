@@ -247,6 +247,22 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
   background: rgba(255,255,255,.06);
 }
 
+.t-quote{
+  position: relative;
+  padding-left: 18px;
+  border-left: 3px solid rgba(79,209,197,.65);
+}
+
+.t-quote::before{
+  content: "“";
+  position: absolute;
+  left: -10px;
+  top: -12px;
+  font-size: 36px;
+  line-height: 1;
+  color: rgba(96,165,250,.75);
+  font-weight: 700;
+}
 
 /* Modal */
 .modal{

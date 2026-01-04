@@ -264,6 +264,12 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
   font-weight: 700;
 }
 
+.show-more-wrap{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
 /* Modal */
 .modal{
   position: fixed; inset: 0;

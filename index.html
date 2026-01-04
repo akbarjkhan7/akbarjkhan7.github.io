@@ -3,84 +3,295 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Akbar Jamal Khan — Product, CRM & Analytics. Portfolio, projects, and contact." />
   <title>Akbar Jamal Khan | Product • CRM • Analytics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="container">
-    <nav class="nav">
-      <a class="logo" href="#">akbarjkhan7</a>
-      <div class="links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
 
-    <section class="hero">
-      <h1>Product-minded, data-driven.</h1>
-      <p>
-        I work at the intersection of <strong>Product</strong>, <strong>CRM</strong>, and <strong>Analytics</strong> —
-        turning messy data and user behaviour into clear decisions and better experiences.
-      </p>
-      <div class="cta">
-        <a class="btn" href="#projects">View projects</a>
-        <a class="btn ghost" href="#contact">Get in touch</a>
-      </div>
-    </section>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Top Nav -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="dot"></span>
+        <span>Akbar</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="navLinks" class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Product • CRM • Analytics</p>
+        <h1>Akbar Jamal Khan</h1>
+        <p class="subtitle">
+          I work at the intersection of <strong>product</strong>, <strong>CRM</strong>, and <strong>data</strong> —
+          turning customer behaviour into clear decisions, better journeys, and measurable outcomes.
+        </p>
+
+        <div class="meta">
+          <span class="badge">London, UK</span>
+          <span class="badge">MSc Data Science (Distinction), Durham</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="socials" aria-label="Social links">
+          <a class="icon-link" href="https://www.linkedin.com/in/your-link-here" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 23.5h4V7.98h-4V23.5ZM8.02 7.98h3.83v2.12h.05c.53-1 1.83-2.12 3.76-2.12 4.02 0 4.76 2.65 4.76 6.09v9.43h-4v-8.36c0-2-.04-4.57-2.78-4.57-2.78 0-3.2 2.17-3.2 4.43v8.5h-4V7.98Z"/></svg>
+          </a>
+
+          <a class="icon-link" href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.76c0 4.98 3.23 9.2 7.7 10.69.56.1.77-.25.77-.55v-2.1c-3.13.68-3.79-1.34-3.79-1.34-.51-1.29-1.25-1.63-1.25-1.63-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.58.76 1.96 1.2.1-.73.39-1.2.7-1.48-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.31 3.11 1.15.9-.25 1.86-.38 2.82-.38.96 0 1.92.13 2.82.38 2.16-1.46 3.11-1.15 3.11-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.05.76 2.12v3.15c0 .3.2.66.78.55 4.46-1.49 7.69-5.7 7.69-10.69C23.25 5.48 18.27.5 12 .5Z"/></svg>
+          </a>
+
+          <a class="icon-link" href="mailto:akbarjamalkhan7@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A3.5 3.5 0 0 1 5.5 2h13A3.5 3.5 0 0 1 22 5.5v13A3.5 3.5 0 0 1 18.5 22h-13A3.5 3.5 0 0 1 2 18.5v-13Zm3.2-.5 6.2 4.65a1 1 0 0 0 1.2 0L18.8 5H5.2ZM20 7.2l-6.2 4.65a3 3 0 0 1-3.6 0L4 7.2V18.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V7.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img class="avatar" src="assets/profile.jpg" alt="Profile photo of Akbar Jamal Khan" />
+        <div class="hero-card-inner">
+          <p class="hero-card-title">Currently</p>
+          <ul class="hero-list">
+            <li>Building portfolio-grade repos (ML, NLP, DEVUL)</li>
+            <li>Positioning: Product + CRM + Analytics</li>
+            <li>Open to roles in London / UK</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container">
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>Short, decision-focused summary of who you are and how you work.</p>
+      </div>
+
+      <div class="card">
+        <p>
+          I’m a product-minded, data-driven professional with experience across customer journeys and CRM.
+          I enjoy taking ambiguous problems — retention, onboarding friction, segmentation, performance measurement —
+          and turning them into structured analysis and practical next steps.
+        </p>
+        <p class="muted">
+          Background: MSc Data Science (Distinction), Durham University • Product & CRM • R / Python / SQL • Stakeholder-led delivery.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Role highlights with impact and what you owned end-to-end.</p>
+      </div>
+
+      <div class="stack">
+        <article class="card item">
+          <div class="item-top">
+            <div>
+              <h3>Associate Product Manager <span class="muted">— Fintech</span></h3>
+              <p class="muted">Onboarding • Cards • User Management • Transactions • CRM collaboration</p>
+            </div>
+            <span class="tag">2024–2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Led cross-functional delivery across engineering, design, marketing, and business stakeholders.</li>
+            <li>Shaped customer journey improvements using analytics, experimentation thinking, and feedback loops.</li>
+            <li>Drove clarity on priorities by translating insights into decisions, trade-offs, and roadmaps.</li>
+          </ul>
+        </article>
+
+        <article class="card item">
+          <div class="item-top">
+            <div>
+              <h3>CRM & Analytics Projects <span class="muted">— Academic / Personal</span></h3>
+              <p class="muted">Segmentation • Predictive modelling • Visual analytics</p>
+            </div>
+            <span class="tag">Ongoing</span>
+          </div>
+          <ul class="bullets">
+            <li>Built reproducible pipelines and reports for ML, NLP, and unsupervised learning coursework.</li>
+            <li>Focused on interpretability and decision usefulness, not just model performance.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selected work with outcomes, methods, and links.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card project">
+          <h3>MVP Modelling — Cricket League</h3>
+          <p>Role-aware MVP scoring using PCA + clustering, bootstrap robustness, feature importance, and an interactive dashboard.</p>
+          <div class="pillrow">
+            <span class="pilltag">R</span><span class="pilltag">PCA</span><span class="pilltag">Clustering</span><span class="pilltag">Shiny</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Text Mining — Rating Prediction</h3>
+          <p>Predicting review ratings with classical ML + deep learning, with reproducible preprocessing and evaluation.</p>
+          <div class="pillrow">
+            <span class="pilltag">Python</span><span class="pilltag">NLP</span><span class="pilltag">LSTM/CNN</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>ML — Wine Quality (Lasso vs RF)</h3>
+          <p>Binary classification and model comparison with cross-validation and test-set evaluation beyond accuracy.</p>
+          <div class="pillrow">
+            <span class="pilltag">R</span><span class="pilltag">glmnet</span><span class="pilltag">Random Forest</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="section">
+      <div class="section-head">
+        <h2>Leadership</h2>
+        <p>How you lead — mentoring, collaboration, community, initiatives.</p>
+      </div>
+
       <div class="grid">
         <article class="card">
-          <h3>MVP Modelling (Cricket League)</h3>
-          <p>Role-aware scoring, PCA + clustering, bootstrapping, feature importance, and an interactive dashboard.</p>
-          <a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">Repository →</a>
+          <h3>Cross-functional Delivery</h3>
+          <p>Owned sprint planning, stakeholder alignment, and delivery rhythm across a multi-discipline squad.</p>
         </article>
-
         <article class="card">
-          <h3>Text Mining: Review Rating Prediction</h3>
-          <p>Classical ML + deep learning for 1–5 star rating prediction with reproducible preprocessing.</p>
-          <a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">Repository →</a>
+          <h3>Collaboration & Communication</h3>
+          <p>Comfortable translating technical insights into clear recommendations for non-technical stakeholders.</p>
         </article>
-
         <article class="card">
-          <h3>Machine Learning: Wine Quality</h3>
-          <p>Binary classification comparing Lasso vs Random Forest with evaluation beyond accuracy.</p>
-          <a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">Repository →</a>
+          <h3>Continuous Learning</h3>
+          <p>Actively building public, reproducible work — and learning from real examples through networking.</p>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        MSc Data Science (Distinction) @ Durham University. I’m interested in how models and metrics translate into
-        real product decisions — segmentation, onboarding funnels, retention, and CRM strategy.
-      </p>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>A compact overview of tools, methods, and product strengths.</p>
+      </div>
 
-      <div class="chips">
-        <span>Product Analytics</span><span>CRM</span><span>R</span><span>Python</span><span>SQL</span>
-        <span>Machine Learning</span><span>Visualisation</span>
+      <div class="skills">
+        <div class="card">
+          <h3>Product & CRM</h3>
+          <div class="chips">
+            <span>Product roadmaps</span><span>Customer journeys</span><span>CRM strategy</span>
+            <span>Stakeholder management</span><span>Agile delivery</span><span>Experimentation mindset</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Analytics & Modelling</h3>
+          <div class="chips">
+            <span>EDA</span><span>Segmentation</span><span>Classification</span><span>Clustering</span>
+            <span>Model evaluation</span><span>Interpretability</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tools</h3>
+          <div class="chips">
+            <span>R</span><span>Python</span><span>SQL</span><span>Git/GitHub</span>
+            <span>Jupyter</span><span>Shiny</span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Recommendations -->
+    <section id="recommendations" class="section">
+      <div class="section-head">
+        <h2>Recommendations</h2>
+        <p>Screenshots of recommendations and feedback (click to enlarge).</p>
+      </div>
+
+      <div class="gallery" id="recoGallery">
+        <!-- Add your screenshots to assets/recommendations/ and list them here -->
+        <img class="shot" src="assets/recommendations/reco-1.jpg" alt="Recommendation screenshot 1">
+        <img class="shot" src="assets/recommendations/reco-2.jpg" alt="Recommendation screenshot 2">
+        <img class="shot" src="assets/recommendations/reco-3.jpg" alt="Recommendation screenshot 3">
+      </div>
+      <p class="muted small">Tip: name files like <code>reco-1.jpg</code>, <code>reco-2.jpg</code> for easy management.</p>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Best way to reach me:</p>
-      <ul class="contact">
-        <li><a href="https://www.linkedin.com/in/your-link-here" target="_blank" rel="noreferrer">LinkedIn</a></li>
-        <li><a href="mailto:akbarjamalkhan7@gmail.com">akbarjamalkhan7@gmail.com</a></li>
-        <li><a href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">GitHub</a></li>
-      </ul>
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>If you want to discuss product, CRM, analytics, or roles — reach out.</p>
+      </div>
+
+      <div class="card contact-card">
+        <div class="contact-row">
+          <a class="btn" href="mailto:akbarjamalkhan7@gmail.com">Email</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/your-link-here" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/akbarjkhan7" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Resume (add PDF link)</a>
+        </div>
+        <p class="muted small">© <span id="year"></span> Akbar Jamal Khan</p>
+      </div>
     </section>
+
   </main>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> Akbar Jamal Khan</small>
-  </footer>
+  <!-- Image Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <img id="modalImg" alt="Enlarged recommendation">
+  </div>
 
   <script src="script.js"></script>
 </body>

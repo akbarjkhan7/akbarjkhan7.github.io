@@ -70,3 +70,17 @@ showMoreBtn.addEventListener("click", () => {
   });
   showMoreBtn.style.display = "none";
 });
+
+// Show more Data Science projects
+const showMoreDsBtn = document.getElementById("showMoreDsBtn");
+const moreDsProjects = document.getElementById("more-ds-projects");
+
+if (showMoreDsBtn && moreDsProjects) {
+  showMoreDsBtn.addEventListener("click", () => {
+    moreDsProjects.classList.toggle("hidden");
+
+    showMoreDsBtn.textContent = moreDsProjects.classList.contains("hidden")
+      ? "Show more projects"
+      : "Show fewer projects";
+  });
+}

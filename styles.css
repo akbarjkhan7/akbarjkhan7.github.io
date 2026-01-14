@@ -173,9 +173,9 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
   border-style: dashed;
 }
 
-.hidden { display: none; }
+.hidden { display: none !important; }
 
-#more-ds-projects {
+#more-ds-projects:not(.hidden) {
   animation: fadeIn .25s ease;
 }
 

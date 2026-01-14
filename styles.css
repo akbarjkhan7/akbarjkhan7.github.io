@@ -184,6 +184,18 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Compact cards for "Show more" */
+.card.project.compact p{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* limits description height */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card.project.compact .pillrow{
+  margin-bottom: 10px;
+}
+
 .stack{ display:grid; gap: 14px; }
 .item-top{ display:flex; justify-content:space-between; gap: 12px; align-items:flex-start; }
 .tag{

@@ -173,6 +173,10 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
   border-style: dashed;
 }
 
+.hidden {
+  display: none;
+}
+
 .stack{ display:grid; gap: 14px; }
 .item-top{ display:flex; justify-content:space-between; gap: 12px; align-items:flex-start; }
 .tag{

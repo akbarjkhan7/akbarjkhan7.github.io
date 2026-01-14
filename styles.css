@@ -215,6 +215,12 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
   gap: 14px;
 }
 
+/* Tighter grid for "Show more" Data Science projects */
+#more-ds-projects {
+  margin-top: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 /* --- Project card alignment fix --- */
 .grid{
   align-items: stretch; /* ensures equal-height cards in a row */

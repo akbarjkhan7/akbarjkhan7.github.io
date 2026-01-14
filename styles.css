@@ -185,15 +185,36 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
 }
 
 /* Compact cards for "Show more" */
+#more-ds-projects { margin-top: 10px; } /* was 14px */
+
+.card.project.compact{
+  padding: 14px; /* was 16px via .card */
+  background: rgba(255,255,255,.045);
+  border-color: rgba(255,255,255,.10);
+}
+
+.card.project.compact h3{
+  font-size: 17px;
+  margin-bottom: 6px; /* tighter */
+}
+
 .card.project.compact p{
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 10px; /* was 12px */
   display: -webkit-box;
-  -webkit-line-clamp: 2;       /* limits description height */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 .card.project.compact .pillrow{
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* was 12px */
+}
+
+.card.project.compact .pilltag{
+  padding: 5px 9px; /* slightly smaller chips */
+  font-size: 11px;
 }
 
 .stack{ display:grid; gap: 14px; }
@@ -219,6 +240,7 @@ code{ background: rgba(255,255,255,.08); padding: .15rem .35rem; border-radius: 
 #more-ds-projects {
   margin-top: 14px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  opacity: .92;
 }
 
 /* --- Project card alignment fix --- */

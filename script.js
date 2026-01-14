@@ -50,26 +50,26 @@ document.addEventListener("keydown", (e) => {
 // Show more testimonials
 const cards = document.querySelectorAll("#testimonialList .t-card");
 const showMoreBtn = document.getElementById("showMoreBtn");
-
 const VISIBLE_COUNT = 6;
 
-// Hide all cards after the first 6
-cards.forEach((card, index) => {
-  if (index >= VISIBLE_COUNT) {
-    card.style.display = "none";
-  }
-});
-
-if (cards.length <= VISIBLE_COUNT) {
-  showMoreBtn.style.display = "none";
-}
-
-showMoreBtn.addEventListener("click", () => {
-  cards.forEach(card => {
-    card.style.display = "block";
+if (cards.length) {
+  // Hide all cards after the first 6
+  cards.forEach((card, index) => {
+    if (index >= VISIBLE_COUNT) card.style.display = "none";
   });
-  showMoreBtn.style.display = "none";
-});
+
+  // Only touch the button if it exists
+  if (showMoreBtn) {
+    if (cards.length <= VISIBLE_COUNT) {
+      showMoreBtn.style.display = "none";
+    } else {
+      showMoreBtn.addEventListener("click", () => {
+        cards.forEach(card => (card.style.display = "block"));
+        showMoreBtn.style.display = "none";
+      });
+    }
+  }
+}
 
 // Show more Data Science projects
 const showMoreDsBtn = document.getElementById("showMoreDsBtn");
@@ -77,10 +77,7 @@ const moreDsProjects = document.getElementById("more-ds-projects");
 
 if (showMoreDsBtn && moreDsProjects) {
   showMoreDsBtn.addEventListener("click", () => {
-    moreDsProjects.classList.toggle("hidden");
-
-    showMoreDsBtn.textContent = moreDsProjects.classList.contains("hidden")
-      ? "Show more projects"
-      : "Show fewer projects";
+    moreDsProjects.classList.remove("hidden");
+    showMoreDsBtn.style.display = "none";
   });
 }

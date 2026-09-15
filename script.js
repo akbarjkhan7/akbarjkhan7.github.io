@@ -71,6 +71,23 @@ if (cards.length) {
   }
 }
 
+// Scroll reveal — one subtle entrance per section, not repeated
+const revealEls = document.querySelectorAll(".reveal");
+if (revealEls.length && "IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealEls.forEach((el) => revealObserver.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add("in"));
+}
+
 // Show more Data Science projects
 const showMoreDsBtn = document.getElementById("showMoreDsBtn");
 const moreDsProjects = document.getElementById("more-ds-projects");
